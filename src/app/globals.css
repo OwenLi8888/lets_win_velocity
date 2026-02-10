@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --waterloo-black: #0a0a0a;
+  --waterloo-gold: #c9a227;
+  --waterloo-white: #fafafa;
+}
+
+body {
+  @apply bg-waterloo-white text-waterloo-black antialiased;
+}
+
+/* Advisory status colors - red / yellow / green */
+.status-high-risk {
+  @apply border-red-500/60 bg-red-50 text-red-800;
+}
+.status-requires-review {
+  @apply border-amber-500/60 bg-amber-50 text-amber-900;
+}
+.status-aligned {
+  @apply border-emerald-600/60 bg-emerald-50 text-emerald-800;
+}
